@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: service-feign
+
+server:
+  port: 8765
+
+#注册中心
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      - http://localhost:8761/eureka/
+
+#开启熔断，此配置没有智能提示
+feign:
+  hystrix:
+    enabled: true

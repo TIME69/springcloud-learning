@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888/ #service-config的服务端口
+      profile: dev
+      label: master
+      name: service-config  #service-config的服务名
+
